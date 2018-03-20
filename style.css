@@ -1,0 +1,83 @@
+*{
+	margin:0;
+	padding:0;
+}
+/*大的盒子*/
+#game{
+	width: 320px;
+	height: 568px;
+	margin: auto;
+	overflow: hidden;
+}
+/*开始界面*/
+#gameStart{
+	width: 100%;
+	height: 100%;
+	background: url(./image/开始背景.png);
+	position: relative;
+/*	display: none;*/
+}
+#gameStart span{
+	width: 160px;
+	height: 40px;
+	display: block;
+	background: #ccc;
+	border: 4px solid #666;
+	text-align: center;
+	box-sizing: border-box;
+	line-height: 32px;
+	font-size: 24;
+	font-weight: bolder;
+	left: 80px;
+	bottom: 200px;
+	position: absolute;
+	cursor: pointer;
+}
+#gameStart span:hover{
+	color:#fff;
+}
+/*进入游戏界面*/
+#gameEnter{
+	width: 100%;
+	height: 100%;
+	background: url(./image/background_1.png);
+	position: relative;
+	display: none;
+}
+#myPlane{
+	position: absolute;
+	bottom: 0;
+	left: 127px;
+	cursor: pointer;
+	width: 66px;
+	height: 80px;
+}
+#myPlane {
+	width: 66px;
+	height: 80px;
+}
+#bullets,#enemys{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.b{
+	position: absolute;
+	/*left: 157px;
+	top: 474px;*/
+	width: 6px;
+	height: 14px;
+}
+.e{
+	position: absolute;
+}
+#scores{
+	width: 100%;
+	height: 100%;
+	padding: 0 20px;
+	font-size:24px;
+	font-weight: bold;
+}
+
